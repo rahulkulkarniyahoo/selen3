@@ -28,6 +28,7 @@ public class FindHiddenWebElement {
 		System.out.println("Done");
 		//driver.close(); 
 		driver.switchTo().window(parentHandle); 
+		System.out.println("Test");
 		
 	}
 }
