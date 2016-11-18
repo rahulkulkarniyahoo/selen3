@@ -1,3 +1,4 @@
+package mytest;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -23,7 +24,7 @@ public class VerifyLinks {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		WebDriver driver = BrowserFactory.startBrowser("chrome", "https://www.google.com");
+		WebDriver driver = BrowserFactory.startBrowser("chrome", "https://www.google.co.uk");
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 		
 		System.out.println("Total Links on this page are = " + links.size());
