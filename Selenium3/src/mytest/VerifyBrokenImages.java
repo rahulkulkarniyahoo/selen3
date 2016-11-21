@@ -10,6 +10,7 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,12 +39,15 @@ public class VerifyBrokenImages {
 		driver.quit();
 	}
 	
+	
+	
 	@Test
 	public void validateImages(){
 		
 		invalidImages = 0;
 		List<WebElement> listOfImages = driver.findElements(By.tagName("img"));
 		System.out.println("Total Number of Images = " + listOfImages.size());
+	
 		
 		for(WebElement imgElement: listOfImages){
 			System.out.println(imgElement.getText());
