@@ -9,6 +9,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import Helper.BrowserFactory;
 import pageobjectmodel.LoginPage;
 
 /**
@@ -20,9 +21,11 @@ public class VerifyWordPressLoginParamterize {
 
 	@Before
 	public void startup() {
-		System.setProperty("webdriver.chrome.driver", "src/resources/chromedriver");
+	/*	System.setProperty("webdriver.chrome.driver", "src/resources/chromedriver");
 		driver = new ChromeDriver();
 		driver.get("http://www.demosite.center/wordpress/wp-login.php");
+		*/
+		driver = BrowserFactory.startBrowser("chrome", "http://www.demosite.center/wordpress/wp-login.php");
 	}
 
 	@After
