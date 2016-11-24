@@ -1,3 +1,8 @@
+/* This class used PageObjectFactory
+ * Needs separate initializing of elements
+ */
+
+
 package mytest;
 
 import org.openqa.selenium.WebDriver;

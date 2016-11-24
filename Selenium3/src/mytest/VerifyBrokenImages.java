@@ -40,7 +40,6 @@ public class VerifyBrokenImages {
 	}
 	
 	
-	
 	@Test
 	public void validateImages(){
 		
