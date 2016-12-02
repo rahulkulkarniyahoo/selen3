@@ -49,6 +49,9 @@ public class AmazonTest {
     ele3.click();
     System.out.println("Sleeping for 4 - 4");
 
+    System.out.println();
+    
+    
   System.out.println(driver.getTitle());
   }
 
